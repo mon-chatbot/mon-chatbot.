@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Aide Financière</title>
+    <style>
+        #reponse {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+        .question {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Chatbot Aide Financière</h1>
+
+    <!-- Question Aide Financière -->
+    <p class="question" onclick="voirReponse()">Comment obtenir de l'aide financière ?</p>
+
+    <!-- Réponse -->
+    <div id="reponse">
+        <p>Pour obtenir de l'aide financière, vous devez soumettre une demande sur notre site, en fournissant des informations sur votre situation financière et vos besoins. Vous pouvez également consulter les différentes bourses disponibles.</p>
+    </div>
+
+    <script>
+        function voirReponse() {
+            var reponse = document.getElementById('reponse');
+            // Bascule entre afficher et masquer la réponse
+            if (reponse.style.display === 'none') {
+                reponse.style.display = 'block';
+            } else {
+                reponse.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
